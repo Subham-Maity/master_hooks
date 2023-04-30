@@ -1,7 +1,14 @@
 # Hooks
 
-### **React Hooks**
-* **useState:** declares a state variable that you can update directly.
+## **React Hooks**
+
+### **useState:** 
+> declares a state variable that you can update directly.
+  
+- Learn More About useState:
+   - [**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useState)
+   - [**Hashnode**](https://codexam.hashnode.dev/mastering-usestate-a-guide-for-beginners)
+   - [**dev.to**](https://dev.to/codexam/mastering-usestate-a-guide-for-beginners-2h30)
 * **useEffect:** connects a component to an external system and runs after every render.
 * **useRef:** declares a ref that can hold any value and does not trigger re-rendering.
 * **useMemo:** lets you cache the result of an expensive calculation and only recompute it when the dependencies change.
