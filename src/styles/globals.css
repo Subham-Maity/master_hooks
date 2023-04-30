@@ -2,68 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #4a5568, #1a202c);
+.main-bg {
+    @apply bg-gradient-to-b from-stone-700 to-gray-900 bg-gradient-to-r items-center justify-center text-white text-center
 }
-
-.framework {
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: bold;
-    font-size: 6rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: radial-gradient(ellipse at right, #90cdf4 50%, #1a202c 45%);
+.flex-item {
+    @apply flex flex-col items-center
 }
-
-.dotted {
-    border-style: dotted;
-    border-width: 2px;
-    border-color: rgba(135, 210, 250, 0.25);
-    padding: 1.5rem;
-    margin-top: 2rem;
+.framework-name {
+    @apply flex flex-col items-center
 }
-
-.box {
-    width: 100%;
-    max-width: 48rem;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    border: 2px solid rgba(158, 158, 158, 0.3);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(to left, #e0e0e0 75%, #6b7280 25%);
+.box{
+    @apply w-full max-w-2xl p-6 mt-2 mb-2 border-dotted border-2 border-gray-600/75 rounded-lg shadow bg-gradient-to-l from-zinc-900/75 via-slate-800/25 to-gray-800/25
 }
 
 .hook-name {
-    font-weight: 900;
-    font-size: 5rem;
-    margin-bottom: 4rem;
+    @apply font-extrabold text-5xl mb-8 text-white
 }
-
-.question {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #48bb78;
-    margin-bottom: 1rem;
+.details {
+    @apply text-lg mb-4
 }
-
-.link {
-    color: #faf089;
+.qs{
+    @apply font-bold text-cyan-500
 }
-
-.example {
-    margin-bottom: 5rem;
-    margin-top: 8rem;
-    font-weight: 900;
-    font-size: 3rem;
-    color: #a5b4fc;
+.ans{
+    @apply text-yellow-200
+}
+.example-number{
+    @apply mb-5 mt-8 text-3xl font-extrabold text-indigo-400
 }
