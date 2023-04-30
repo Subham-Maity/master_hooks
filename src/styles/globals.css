@@ -3,3 +3,67 @@
 @tailwind utilities;
 
 
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #4a5568, #1a202c);
+}
+
+.framework {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: radial-gradient(ellipse at right, #90cdf4 50%, #1a202c 45%);
+}
+
+.dotted {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgba(135, 210, 250, 0.25);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.box {
+    width: 100%;
+    max-width: 48rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border: 2px solid rgba(158, 158, 158, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to left, #e0e0e0 75%, #6b7280 25%);
+}
+
+.hook-name {
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #48bb78;
+    margin-bottom: 1rem;
+}
+
+.link {
+    color: #faf089;
+}
+
+.example {
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #a5b4fc;
+}
