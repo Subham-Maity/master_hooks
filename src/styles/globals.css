@@ -2,46 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-.cardTexture5 {
-    @apply pl-2 sm:pl-16 pr-2 sm:pr-16  pt-2 sm:pt-8 pb-8 sm:pb-8 text-gray-900 dark:text-white overflow-hidden rounded-lg ml-0 sm:ml-2.5 mr-0 sm:mr-2.5 bg-gray-100 shadow-sm shadow-gray-100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #2c3135;
-}
 
-
-.dark .cardTexture5 {
-    background: #171717;
-}
-
-.dark .cardTexture5:hover {
-    background: linear-gradient(to bottom, #171717, #03111a);
-}
-
-
-
-.textStyle1 {
-    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    text-align: left;
-    word-spacing: normal;
-
-}
-
-@media only screen and (max-width: 768px) {
-    .textStyle1 {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .textStyle1 {
-        font-size: 20px;
-        line-height: 36px;
-    }
-}
