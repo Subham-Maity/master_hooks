@@ -9,11 +9,8 @@ const Counter = () => {
 
   return (
     <div>
-      <p className="text-2xl font-bold mb-2 text-gray-200">Count: {count}</p>
-      <button
-        className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out"
-        onClick={incrementCount}
-      >
+      <p className="counter-count-text">Count: {count}</p>
+      <button className="counter-count-button" onClick={incrementCount}>
         Increment Count
       </button>
     </div>

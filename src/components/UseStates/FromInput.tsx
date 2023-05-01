@@ -15,15 +15,13 @@ const FormInput = ({ label }: FormInputProps) => {
     <div>
       <label htmlFor="name">{label}</label>
       <input
-        className="text-sky-800 p-1"
+        className="form-input-text"
         id="name"
         type="text"
         value={input}
         onChange={handleChange}
       />
-      <p className="text-2xl font-bold mt-2 text-gray-200">
-        You typed: {input}
-      </p>
+      <p className="form-input-field">You typed: {input}</p>
     </div>
   );
 };

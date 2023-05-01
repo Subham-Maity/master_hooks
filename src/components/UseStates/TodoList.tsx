@@ -38,10 +38,15 @@ function TodoList(props: TodoListProps) {
 
   return (
     <div>
-      <h1 className="text-2xl">Todo List</h1>
-      <form className="text-sky-500 p-1" onSubmit={handleSubmit}>
-        <input type="text" value={input} onChange={handleChange} />
-        <button className="font-bold pl-2" type="submit">
+      <h1 className="todo-list-text">Todo List</h1>
+      <form className="todo-list-form" onSubmit={handleSubmit}>
+        <input
+          className="todo-list-input"
+          type="text"
+          value={input}
+          onChange={handleChange}
+        />
+        <button className="todo-list-add-button" type="submit">
           Add
         </button>
       </form>
@@ -49,7 +54,12 @@ function TodoList(props: TodoListProps) {
         {tasks.map((task) => (
           <li key={task.id}>
             {task.text}
-            <button onClick={() => handleRemove(task.id)}>X</button>
+            <button
+              className="todo-list-remove-button"
+              onClick={() => handleRemove(task.id)}
+            >
+              Remove
+            </button>
           </li>
         ))}
       </ul>

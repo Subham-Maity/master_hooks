@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*~~~MainPage~~~~*/
 .main-bg {
     @apply bg-gradient-to-b from-stone-700 to-gray-900 bg-gradient-to-r items-center justify-center text-white text-center
 }
@@ -30,3 +30,86 @@
 .example-number{
     @apply mb-5 mt-8 text-3xl font-extrabold text-indigo-400
 }
+
+/*~~~~UserStates Components~~~~*/
+
+
+/*Counter.tsx*/
+.counter-count-text{
+    @apply text-2xl font-bold mb-2 text-gray-200
+}
+.counter-count-button{
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out
+}
+
+
+/*CounterIncrementDecrement.tsx*/
+.counter-increment-decrement-flex{
+    @apply flex flex-col items-center space-y-4
+}
+.counter-increment-decrement-count-text{
+    @apply text-2xl font-bold mb-2 text-gray-200
+}
+.counter-increment-decrement-count-space{
+    @apply flex space-x-4
+}
+.counter-increment-decrement-count-plus{
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out
+}
+.counter-increment-decrement-count-minus{
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out
+}
+
+/*FromInput.tsx*/
+
+.form-input-text{
+    @apply text-sky-800 p-1 border-2 border-pink-600 rounded-md text-2xl text-teal-500 font-bold
+}
+.form-input-field{
+    @apply text-2xl font-bold mt-2 text-gray-200
+}
+
+/*TodoList.tsx*/
+
+.todo-list-text{
+    @apply text-2xl font-bold mb-2 text-gray-200
+}
+.todo-list-button{
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out
+}
+
+.todo-list-form{
+    @apply flex flex-col items-center space-y-4
+}
+
+.todo-list-input{
+    @apply text-sky-800 p-1 border-2 border-pink-600 rounded-md text-2xl text-teal-500 font-bold
+}
+.todo-list-add-button{
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out
+}
+
+.todo-list-remove-button{
+    @apply bg-red-500 hover:bg-red-600 mt-1.5 ml-1.5 text-white font-bold py-1 px-1 rounded-md shadow-md transition duration-300 ease-in-out
+}
+
+
+/*Toggles.tsx*/
+.toggle-button-bg{
+    @apply w-16 h-8 flex items-center rounded-full bg-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 border-2 border-pink-600/75
+}
+
+.toggle-button-on{
+    @apply translate-x-8 bg-pink-500
+}
+.toggle-button-off{
+    @apply translate-x-0 bg-white
+}
+.toggle-button-rotate{
+    @apply w-7 h-7 rounded-full transform transition-transform
+}
+.toggle-button-text{
+    @apply text-2xl font-bold mb-2 text-gray-200
+}
+
+
