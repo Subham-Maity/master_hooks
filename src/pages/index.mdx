@@ -1,8 +1,14 @@
-import Counter from "../components/UseStates/Counter";
-import FromInput from "../components/UseStates/FromInput";
-import TodoList from "../components/UseStates/TodoList";
-import Toggles from "../components/UseStates/Toggles.tsx"
-import CounterIncrementDecrement from "../components/UseStates/CounterIncrementDecrement";
+import Counter from "../components/react/UseStates/Counter";
+import FromInput from "../components/react/UseStates/FromInput";
+import TodoList from "../components/react/UseStates/TodoList";
+import Toggles from "../components/react/UseStates/Toggles.tsx"
+import CounterIncrementDecrement from "../components/react/UseStates/CounterIncrementDecrement";
+
+import WeatherButtons from "../components/react/useEffect/weather/button";
+import { LocationProvider } from "../components/react/useEffect/weather/location";
+
+
+
 
 -
 
@@ -54,9 +60,47 @@ import CounterIncrementDecrement from "../components/UseStates/CounterIncrementD
 <TodoList/>
 <div className="example-number">⚡⌁ Example 5 ⌁⚡</div>
 <Toggles />
+</div>
+
+
+
+[//]: # (Box)
+<div className="box">
+
+
+[//]: # (Hook Name)
+<h1 className="hook-name">useEffect hook</h1>
+
+[//]: # (Question )
+<details className="details">
+ <summary className="qs">What is the useState hook?</summary>
+<h1 className="ans">
+
+
+ Learn More About useState:
+[**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useEffect)
+[**Hashnode**]()
+[**dev.to**]()
+> Here you can find easy explanation of useState hook with examples.
+
+
+</h1>
+</details>
+
+[//]: # (Components for specific hooks)
+<div className="example-number">⚡⌁ Example 1 ⌁⚡</div>
+<LocationProvider>
+  <WeatherButtons
+    location="London"
+    units="metric"
+    theme="dark"
+  />
+</LocationProvider>
 
 
 </div>
+
+
 
 
 </div>

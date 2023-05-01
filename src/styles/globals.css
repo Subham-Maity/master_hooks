@@ -31,7 +31,7 @@
     @apply mb-5 mt-8 text-3xl font-extrabold text-indigo-400
 }
 
-/*~~~~UserStates Components~~~~*/
+/*~~~~UseStates Components~~~~*/
 
 
 /*Counter.tsx*/
@@ -112,4 +112,12 @@
     @apply text-2xl font-bold mb-2 text-gray-200
 }
 
+
+/*~~~~UseEffect Components~~~~*/
+
+
+/*Weather.tsx*/
+.weather-current-weather-button{
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out mr-2
+}
 
