@@ -18,14 +18,20 @@ const WeatherButtons: React.FC<WeatherProps> = ({ location }) => {
   }, [requestType, location]);
 
   return (
-    <div>
+    <div className="text-2xl">
       <button
         className="weather-current-weather-button"
         onClick={() => setRequestType("current")}
       >
         Current Weather
       </button>
-      {weatherData && <pre>{JSON.stringify(weatherData, null, 2)}</pre>}
+      {weatherData && (
+        <div className="weather-json-bg ">
+          <pre className="weather-button-pre-wrap">
+            {JSON.stringify(weatherData, null, 2)}
+          </pre>
+        </div>
+      )}
     </div>
   );
 };
