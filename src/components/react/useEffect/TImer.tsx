@@ -1,23 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
-export function useTimer(initialSeconds: number) {
-  const [seconds, setSeconds] = useState(initialSeconds);
+export const Timer: React.FC = () => {
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setSeconds((prevSeconds: number) => prevSeconds + 1);
+    const interval = setInterval(() => {
+      setSeconds((seconds) => seconds + 1);
     }, 1000);
 
     return () => {
-      clearInterval(timer);
+      clearInterval(interval);
     };
   }, []);
-
-  return seconds;
-}
-
-export function Timer() {
-  const seconds = useTimer(0);
 
   return (
     <div>
@@ -26,4 +20,4 @@ export function Timer() {
       </p>
     </div>
   );
-}
+};
