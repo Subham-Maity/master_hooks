@@ -16,13 +16,7 @@ const ColorWidget: React.FC<ColorWidgetProps> = ({ initialColor }) => {
     if (container) {
       const widget = createWidget(color, container);
 
-      interface StatusChangeEventDetail {
-        status: string;
-      }
-
-      const handleStatusChange = (
-        event: CustomEvent<StatusChangeEventDetail>
-      ) => {
+      const handleStatusChange = (event: CustomEvent<{ status: string }>) => {
         console.log("The status is:", event.detail.status);
       };
 
@@ -35,17 +29,12 @@ const ColorWidget: React.FC<ColorWidgetProps> = ({ initialColor }) => {
     }
   }, [color]);
 
-  const getRandomColor = () => {
-    const letters = "0123456789ABCDEF";
-    let randomColor = "#";
-    for (let i = 0; i < 6; i++) {
-      randomColor += letters[Math.floor(Math.random() * 16)];
-    }
-    return randomColor;
-  };
-
   const changeColor = () => {
-    setColor(getRandomColor());
+    setColor(
+      `#${Math.floor(Math.random() * 0x1000000)
+        .toString(16)
+        .padStart(6, "0")}`
+    );
   };
 
   return (
