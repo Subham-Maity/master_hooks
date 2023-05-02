@@ -1,5 +1,7 @@
 # 🎉 A Beginner's Guide to `useEffect`
 
+![deps-compare-correct](https://user-images.githubusercontent.com/97989643/235735279-cb6ecbd2-fdf8-4e9d-9a02-6c25fff14c3e.gif)
+
 Welcome to the world of React Hooks! Today, we'll dive into one of the most popular hooks: `useEffect`. Don't worry, we'll make it fun and easy to understand. So, let's get started! 🚀
 
 ## 📚 What is `useEffect`
