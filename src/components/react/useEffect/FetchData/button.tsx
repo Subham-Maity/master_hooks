@@ -26,7 +26,7 @@ const WeatherButtons: React.FC<WeatherProps> = ({ location }) => {
         Current Weather
       </button>
       {weatherData && (
-        <div className="weather-json-bg ">
+        <div className="weather-json-bg">
           <pre className="weather-button-pre-wrap">
             {JSON.stringify(weatherData, null, 2)}
           </pre>

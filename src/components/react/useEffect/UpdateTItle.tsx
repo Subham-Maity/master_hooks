@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export function UpdateT() {
+export function UpdateTItle() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -10,8 +10,13 @@ export function UpdateT() {
 
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <p className="update-title-text">You clicked {count} times</p>
+      <button
+        className="update-title-button"
+        onClick={() => setCount(count + 1)}
+      >
+        Click me
+      </button>
     </div>
   );
 }
