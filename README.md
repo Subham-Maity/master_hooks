@@ -13,10 +13,10 @@
 ### 📌 **useEffect:**
 > connects a component to an external system and runs after every render.
 - Learn More About useEffect:
-   - [**GitHub**]()
-   - [**CodeXam**]()
-   - [**Hashnode**]()
-   - [**dev.to**]()
+   - [**GitHub**](https://github.com/Subham-Maity/next-hooks-master/blob/main/docs/Hooks/React/useEffect.md)
+   - [**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useEffect)
+   - [**Hashnode**](https://codexam.hashnode.dev/a-beginners-guide-to-useeffect)
+   - [**dev.to**](https://dev.to/codexam/a-beginners-guide-to-useeffect-3ej4)
 ### 📌 **useRef:** 
 > declares a ref that can hold any value and does not trigger re-rendering.
 - Learn More About useRef:
