@@ -28,7 +28,7 @@ ___________
 | 9  |     [useLayoutEffect](#-uselayouteffect-)     |     [useWindowSize](#-usewindowsize-)     | [useIsomorphicLayoutEffect](#-useisomorphiclayouteffect-) |
 | 10 |  [useInsertionEffect](#-useinsertioneffect-)  |       [useDebounce](#-usedebounce-)       |       [useIsomorphicLayout](#-useisomorphiclayout-)       |
 | 11 |         [useMemoOnce](#-usememoonce-)         |                                           |        [useIsomorphicQuery](#-useisomorphicquery-)        |
-| 12 |         [useCallback](#-usecallback-)         |                                           |     [useIsomorphicMutation](#-useisomorphicmutation-)     |
+| 12 |         [useCallback](#-usecallback--1)         |                                           |     [useIsomorphicMutation](#-useisomorphicmutation-)     |
 | 13 |         [ useWaitFor](#-usewaitfor-)          |                                           |     [ useIsomorphicContext](#-useisomorphiccontext-)      |
 | 14 |         [usePrevious](#-useprevious-)         |                                           |                                                          |
 
