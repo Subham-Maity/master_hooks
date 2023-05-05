@@ -1,5 +1,15 @@
+<div align="center">
+
 # Master Hooks in React & Next.js 
+
+___________
+
+
 # 🔗 🌐 [Live Demo](https://next-hooks-master.vercel.app/) ⚡🔗
+
+</div>
+
+___________
 ## 📑 Table of Contents
 
 |no|       React Hooks       |        Next.js Hooks         |                Third Party Hooks                |
@@ -11,6 +21,7 @@
 
 
 
+______
 
 
 
@@ -21,9 +32,11 @@
 
 
 
-
+<div align="center">
 
 ## ↪ 🔗⚡ **React Hooks** ⚡🔗 
+
+</div>
 
 ### 📌 **useState:** 
 > declares a state variable that you can update directly.
@@ -124,7 +137,14 @@
   - [**CodeXam**]()
   - [**Hashnode**]()
   - [**dev.to**]()
-### ↪ 🔗⚡ **Next.js Hooks** ⚡🔗
+
+<div align="center">
+
+## ↪ 🔗⚡ **Next.js Hooks** ⚡🔗
+
+</div>
+
+
 ### 📌 **useRouter:** 
 > returns the router object that contains information about the current route.
 - Learn More About useRouter:
@@ -195,7 +215,12 @@
   - [**CodeXam**]()
   - [**Hashnode**]()
   - [**dev.to**]()
-### ↪ 🔗⚡ **Third-party Hooks** ⚡🔗
+
+<div align="center">
+
+## ↪ 🔗⚡ **Third-party Hooks** ⚡🔗
+
+</div>
 
 ### 📌 **useSWR**: 
 > returns data and error from a remote data source with caching, revalidation, and mutation features.
