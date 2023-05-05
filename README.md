@@ -1,4 +1,27 @@
-# Hooks
+# Master Hooks in React & Next.js 
+# 🔗 🌐 [Live Demo](https://next-hooks-master.vercel.app/) ⚡🔗
+## 📑 Table of Contents
+
+|no|       React Hooks       |        Next.js Hooks         |                Third Party Hooks                |
+|:---:|:-----------------------:|:----------------------------:|:-----------------------------------------------:|
+|1| [useState](#-usestate)  |  [useRouter](#-userouter-)   |               [useSWR](#-useswr-)               |
+|2|[useEffect](#-useeffect) | [useSession](#-usesession-)  |         [useSuspense:](#-usesuspense-)          |
+|3|[useRef](#-useref)       |[useTranslation](#-usetranslation-) | [useErrorBoundary](#-useerrorboundary) |
+|4|[useMemo](#-usememo)     |[useRouter](#-userouter-)    | [useIntersectionObserver](#-useintersectionobserver) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## ↪ 🔗⚡ **React Hooks** ⚡🔗 
 
