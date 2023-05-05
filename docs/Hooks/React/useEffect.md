@@ -6,6 +6,9 @@
 
 Welcome to the world of React Hooks! Today, we'll dive into one of the most popular hooks: `useEffect`. Don't worry, we'll make it fun and easy to understand. So, let's get started! 🚀
 
+![react-useeffect-hook-cleanup](https://user-images.githubusercontent.com/97989643/236387506-b38d84fb-af9c-4e8e-8a65-a9fa73ba10de.svg)
+
+
 ## 📚 What is `useEffect`
 
 `useEffect` is a **React Hook** that allows you to perform side effects in your functional components. Side effects are actions that happen outside of your component, like fetching data, updating the DOM, or subscribing to events. With `useEffect`, you can manage these side effects without writing a class or function. 🎉
