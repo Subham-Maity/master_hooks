@@ -2,17 +2,19 @@
 
 # Master Hooks in React & Next.js 
 
-___________
+_________________
 
 
 # 🔗 🌐 [Live Demo](https://next-hooks-master.vercel.app/) ⚡🔗
+
+_________________
 
 
 ![image](https://user-images.githubusercontent.com/97989643/236401286-0156f8dc-c95b-4aea-8cb4-213d94e4c8cd.png)
 
 </div>
 
-___________
+________________
 
 <div align="center">
 
