@@ -10,6 +10,9 @@ ___________
 </div>
 
 ___________
+
+<div align="center">
+
 ## 📑 Table of Contents
 
 |no|       React Hooks       |        Next.js Hooks         |                Third Party Hooks                |
@@ -20,7 +23,7 @@ ___________
 |4|[useMemo](#-usememo)     |[useRouter](#-userouter-)    | [useIntersectionObserver](#-useintersectionobserver) |
 
 
-
+</div>
 ______
 
 
