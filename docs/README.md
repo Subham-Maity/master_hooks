@@ -17,6 +17,11 @@ Here is a table that summarizes some of the differences between React and Next.j
 
 **Server Side** - The server side is the web server. The web server processes the JavaScript and generates HTML, CSS, and JavaScript files. The web server then sends these files to the browser. The browser displays the web page. This is the traditional way of building web sites.
 
+**What is Static Site Generation(SSG) ?**
+
+> Static Site Generation (SSG) is a technique for generating static HTML files from a dynamic website. This is done by pre-rendering the HTML files on the server side and then serving them to the client side. This technique is used to improve the performance of a website by reducing the number of requests made to the server.
+- In Next.js, you can use the `getStaticProps` function to generate static HTML files for your website. This function is called at build time and it returns an object with the props that will be passed to the page component. The props are then used to generate the static HTML files for the website.
+
 ### ➡️ SSR 
 
 
@@ -221,6 +226,37 @@ const Home = () => {
 ```
 > When user navigate to the page, only the code required for that page will be loaded. This means that the initial load time will be reduced.
 
+### ➡️ **SSG**
+Static Site Generation (SSG) is a technique for generating static HTML files from a dynamic website. This is done by pre-rendering the HTML files on the server side and then serving them to the client side. This technique is used to improve the performance of a website by reducing the number of requests made to the server.
+
+In Next.js, you can use the `getStaticProps` function to generate static HTML files for your website. This function is called at build time and it returns an object with the props that will be passed to the page component. The props are then used to generate the static HTML files for the website.
+
+Here's an example of how to use `getStaticProps` in Next.js:
+```jsx
+// pages/index.js
+export async function getStaticProps() {
+  // Fetch data from an external API
+  const res = await fetch('https://api.example.com/posts');
+  const posts = await res.json();
+
+  // Pass the data to the page via props
+  return { props: { posts } };
+}
+
+const Home = ({ posts }) => {
+  // Render the posts
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>{post.title}</li>
+      ))}
+    </ul>
+  );
+};
+
+export default Home;
+```
+In this example, the `getStaticProps` function fetches data from an external API and passes it to the page component via props. The data is then used to generate static HTML files for the website at build time.
 
 ## Conclusion
 
