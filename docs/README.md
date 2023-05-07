@@ -258,6 +258,80 @@ export default Home;
 ```
 In this example, the `getStaticProps` function fetches data from an external API and passes it to the page component via props. The data is then used to generate static HTML files for the website at build time.
 
+Sure, I have updated the article to reflect the changes in Next.js 13.4. Here is the updated article:
+
+### 😕 When to use Server-side and Client-side rendering in Next.js
+
+Here is a possible rewrite of the article that corrects the errors and misunderstandings:
+
+React 18 introduced a new feature called React Server Components, which allows you to render components on the server and reduce the amount of JavaScript sent to the client. Next.js 13 beta adopted this feature in a new folder called the `app` directory, which supports React Server Components by default.
+
+By default, all components created in `.jsx` within the `pages` directory are hybrid components. This means that Next.js prerenders them on the server and hydrates them on the client, which is how Next.js has always worked. Hybrid components can use state or hooks like `useState` in React, or other client-side state management solutions, and they will work on both the server and the client.
+
+However, there are times when you may want to use server-only or client-only rendering. For example, if you need to fetch data or access back-end resources on the server, or if you need to use browser APIs or large dependencies on the client. For these cases, you can use the `useClient` directive to declare a boundary between a server-only and a client-only module graph.
+
+The `useClient` directive is a special comment that you add at the top of your file, before any imports. It should look like this: `// useClient`. It tells Next.js which modules should only be executed on the client. Any module that starts with the `useClient` directive will be excluded from the server bundle and included in the client bundle. Any module that imports it will also be executed on the client.
+
+This allows you to use both server-side and client-side features in your Next.js application and optimize the performance and interactivity of your components.
+
+Here is a table that explains when you might want to use server components and when to use client components:
+
+| Feature | Server Component | Client Component |
+|---------|------------------|------------------|
+| Fetching data | ✔️ | ❌ |
+| Accessing back-end resources | ✔️ | ❌ |
+| Reducing client-side JavaScript | ✔️ | ❌ |
+| Adding interactivity | ❌ | ✔️ |
+| State management | ❌ | ✔️ |
+| Effects | ❌ | ✔️ |
+| Browser APIs | ❌ | ✔️ |
+| Large dependencies | ❌ | ✔️ |
+
+
+> To put it in simple words, just let Next.js do its thing out of the box, make it server side, but then when you want to use some React capabilities like `useState`, `useEffect`, or interactivity, then simply add that `use client` on top. It is as simple as that!
+
+Here is a very basic example of when to use `use client` at the top of the component or not:
+
+- Suppose we want to create a component that displays a greeting message based on the user's name. We can use the `localStorage` API to store and retrieve the user's name from the browser.
+- However, we cannot use the `localStorage` API in a server-only component, because it is a browser-only feature. If we try to use it in a server-only component, we will get an error and our component will not render.
+- To solve this problem, we can use the `use client` directive to declare a boundary between a server-only and a client-only module graph. This means that any module that starts with the `use client` directive will only be executed on the client, and any module that imports it will also be executed on the client. This allows us to use the `localStorage` API without affecting the server bundle size or performance.
+- To use the `use client` directive, we need to add it at the top of our file, before any imports. It should look like this: `// use client`
+- Then, we can import React and any other modules that are part of the client bundle. We can also define our component as a React function component that uses the `localStorage` API to get and set the user's name and returns some JSX elements.
+- Finally, we can export our component as the default export of our file.
+
+Here is the code for our component:
+
+```jsx
+// app/Greeting.tsx
+'use client'; // Declare the client module boundary at the top of the file
+
+import React from "react"; // Import any modules that are part of the client bundle
+
+export default function Greeting() {
+  // Use browser APIs or other client features as usual
+  const [name, setName] = React.useState(() => {
+    return localStorage.getItem("name") || "";
+  });
+
+  const handleChange = (event) => {
+    setName(event.target.value);
+    localStorage.setItem("name", event.target.value);
+  };
+
+  return (
+    <div>
+      <p>Hello, {name || "stranger"}!</p>
+      <input type="text" value={name} onChange={handleChange} />
+    </div>
+  );
+}
+```
+
+
+
+
+
+
 ## Conclusion
 
 Next.js is an extension of React.js. It is a framework for building React applications. It provides a lot of features that make it easier to build React applications. It also provides a lot of performance optimizations that make it faster than React.
