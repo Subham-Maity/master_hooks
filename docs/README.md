@@ -408,3 +408,6 @@ npx create-next-app@latest ./
 - `postcss.config.js`: This file allows you to configure PostCSS plugins that are used by Next.js to process CSS files. You can use this file to enable features such as Tailwind CSS, Autoprefixer, PurgeCSS, or any other PostCSS plugins that you want to use in your project.
 - `README.md`: This file contains documentation about the project, such as how to install, run, test, or deploy it. You can use this file to explain what your project does, how it works, what technologies it uses, or any other information that you want to share with others who might use or contribute to your project.
 - `tailwind.config.js`: This file allows you to configure Tailwind CSS options that are used by Next.js
+
+
+### 🔗 Next.js Routing System
