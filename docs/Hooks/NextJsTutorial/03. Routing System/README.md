@@ -4,8 +4,10 @@
 
 - Each folder in the `app` directory becomes a route and the folder name becomes the routes' path.
 
-<img align="center" src="./1.png" alt="image" width="100" height="100">
 
+<div align="center">
+<img src="./1.png" alt="image" width="200" >
+</div>
 
 - For example, if you have a folder called `pages/about`, then you will have a route called `/about`.
 
