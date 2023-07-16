@@ -11,7 +11,7 @@ export default function ShadowInputs() {
 
     })
 
-    const handleInput = (event: any) => {
+    const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
         const name = event.target.name;
         const value = event.target.value;
 

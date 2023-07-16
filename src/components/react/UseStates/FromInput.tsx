@@ -1,29 +1,31 @@
-import { useState } from "react";
+import React, {useState} from "react";
+const FormInput = () => {
+    const [data, updateData] = useState({
+            text: ""
+        }
+    )
+    const handleInput = (event: any) => {
+        const name = event.target.name;
+        const value = event.target.value;
 
-type FormInputProps = {
-  label: string;
-};
+        updateData((prev: any) => {
+            return {...prev, [name]: value}
 
-const FormInput = ({ label }: FormInputProps) => {
-  const [input, setInput] = useState<string>("");
+        })
+    }
+    return (
+        <div>
+            <input
+                className="form-input-text"
+                name="text"
+                type="text"
+                required={true}
+                onChange={handleInput}
+            />
+            <p className="text-white font-bold text-2xl"> {data.text}</p>
+        </div>
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    setInput(event.target.value);
-  };
-
-  return (
-    <div>
-      <label htmlFor="name">{label}</label>
-      <input
-        className="form-input-text"
-        id="name"
-        type="text"
-        value={input}
-        onChange={handleChange}
-      />
-      <p className="form-input-field">You typed: {input}</p>
-    </div>
-  );
+    );
 };
 
 export default FormInput;
