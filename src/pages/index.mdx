@@ -5,13 +5,15 @@ import Toggles from "../components/react/UseStates/Toggles.tsx"
 import CounterIncrementDecrement from "../components/react/UseStates/CounterIncrementDecrement";
 
 import WeatherButtons from "../components/react/useEffect/FetchData/button";
-import { LocationProvider } from "../components/react/useEffect/FetchData/location";
+import {LocationProvider} from "../components/react/useEffect/FetchData/location";
 import {UpdateTItle} from "../components/react/useEffect/UpdateTItle";
 import {Timer} from "../components/react/useEffect/TImer";
 import WidgetApp from "../components/react/useEffect/Widget/ColorWidget";
 import ColorWidget from "../components/react/useEffect/Widget/ColorWidget";
 import UseFetch from "../components/react/useEffect/UserFetch/useFetch";
 import {ConditionalEffect} from "../components/react/useEffect/ConditionalEffect";
+import CounterStop from "../components/react/UseStates/CounterStop";
+import ShadowInputs from "../components/react/UseStates/Form";
 
 
 
@@ -21,106 +23,105 @@ import {ConditionalEffect} from "../components/react/useEffect/ConditionalEffect
 
 
 
-[//]: # (Main Theme !dont change)
+
 <div className="main-bg">
-<div className="flex-item">
+    <div className="flex-item">
 
 
-
-[//]: # (Framework)
-<div className = "mb-2 text-center font-bold text-transparent sm:text-6xl text-[25px] bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-300/50 to-indigo-900/45">React</div>
-
-
+        [//]: # (Framework)
+        <div
+            className="mb-2 text-center font-bold text-transparent sm:text-6xl text-[25px] bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-300/50 to-indigo-900/45">React</div>
 
 
-[//]: # (Box)
-<div className="box">
+        [//]: # (Box)
+        <div className="box">
 
 
-[//]: # (Hook Name)
-<h1 className="hook-name">useState hook</h1>
+            [//]: # (Hook Name)
+            <h1 className="hook-name">useState hook</h1>
 
-[//]: # (Question )
-<details className="details">
- <summary className="qs">What is the useState hook?</summary>
-<h1 className="ans">
-
-
- Learn More About useState:
-[**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useState)
-[**Hashnode**](https://codexam.hashnode.dev/mastering-usestate-a-guide-for-beginners)
-[**dev.to**](https://dev.to/codexam/mastering-usestate-a-guide-for-beginners-2h30)
-> Here you can find easy explanation of useState hook with examples.
+            [//]: # (Question )
+            <details className="details">
+                <summary className="qs">What is the useState hook?</summary>
+                <h1 className="ans">
 
 
-</h1>
-</details>
-
-[//]: # (Components for specific hooks)
-<div className="example-number">⚡⌁ Example 1 ⌁⚡</div>
-<Counter/>
-<div className="example-number">⚡⌁ Example 2 ⌁⚡</div>
-<CounterIncrementDecrement/>
-<div className="example-number">⚡⌁ Example 3 ⌁⚡</div>
-<FromInput/>
-<div className="example-number">⚡⌁ Example 4 ⌁⚡</div>
-<TodoList/>
-<div className="example-number">⚡⌁ Example 5 ⌁⚡</div>
-<Toggles />
-</div>
+                    Learn More About useState:
+                    [**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useState)
+                    [**Hashnode**](https://codexam.hashnode.dev/mastering-usestate-a-guide-for-beginners)
+                    [**dev.to**](https://dev.to/codexam/mastering-usestate-a-guide-for-beginners-2h30)
+                    > Here you can find easy explanation of useState hook with examples.
 
 
+                </h1>
+            </details>
 
-[//]: # (Box)
-<div className="box">
-
-
-[//]: # (Hook Name)
-<h1 className="hook-name">useEffect hook</h1>
-
-[//]: # (Question )
-<details className="details">
- <summary className="qs">What is the useEffect hook?</summary>
-<h1 className="ans">
-
-
- Learn More About useEffect:
-[**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useEffect)
-[**Hashnode**]()
-[**dev.to**]()
-> Here you can find easy explanation of useState hook with examples.
-
-
-</h1>
-</details>
-
-[//]: # (Components for specific hooks)
-<div className="example-number">⚡⌁ Example 1 ⌁⚡</div>
-<LocationProvider>
-  <WeatherButtons
-    location="London"
-    units="metric"
-    theme="dark"
-  />
-</LocationProvider>
-<div className="example-number">⚡⌁ Example 2 ⌁⚡</div>
-<UpdateTItle/>
-<div className="example-number">⚡⌁ Example 3 ⌁⚡</div>
-<Timer/>
-<div className="example-number">⚡⌁ Example 4 ⌁⚡</div>
-<ColorWidget initialColor="#e5e7eb" />
-<div className="example-number">⚡⌁ Example 5 ⌁⚡</div>
-<UseFetch/>
-<div className="example-number">⚡⌁ Example 6 ⌁⚡</div>
-<ConditionalEffect/>
+            [//]: # (Components for specific hooks)
+            <div className="example-number">⚡⌁ Example 1 ⌁⚡</div>
+            <Counter/>
+            <div className="example-number">⚡⌁ Example 2 ⌁⚡</div>
+            <CounterIncrementDecrement/>
+            <div className="example-number">⚡⌁ Example 3 ⌁⚡</div>
+            <CounterStop/>
+            <div className="example-number">⚡⌁ Example 4 ⌁⚡</div>
+            <FromInput/>
+            <div className="example-number">⚡⌁ Example 5 ⌁⚡</div>
+            <TodoList/>
+            <div className="example-number">⚡⌁ Example 6 ⌁⚡</div>
+            <Toggles/>
+            <div className="example-number">⚡⌁ Example 7 ⌁⚡</div>
+            <ShadowInputs/>
+        </div>
 
 
-</div>
+        [//]: # (Box)
+        <div className="box">
 
 
+            [//]: # (Hook Name)
+            <h1 className="hook-name">useEffect hook</h1>
+
+            [//]: # (Question )
+            <details className="details">
+                <summary className="qs">What is the useEffect hook?</summary>
+                <h1 className="ans">
 
 
-</div>
+                    Learn More About useEffect:
+                    [**CodeXam**](https://codexam.vercel.app/docs/Hooks/React/useEffect)
+                    [**Hashnode**]()
+                    [**dev.to**]()
+                    > Here you can find easy explanation of useState hook with examples.
+
+
+                </h1>
+            </details>
+
+            [//]: # (Components for specific hooks)
+            <div className="example-number">⚡⌁ Example 1 ⌁⚡</div>
+            <LocationProvider>
+                <WeatherButtons
+                    location="London"
+                    units="metric"
+                    theme="dark"
+                />
+            </LocationProvider>
+            <div className="example-number">⚡⌁ Example 2 ⌁⚡</div>
+            <UpdateTItle/>
+            <div className="example-number">⚡⌁ Example 3 ⌁⚡</div>
+            <Timer/>
+            <div className="example-number">⚡⌁ Example 4 ⌁⚡</div>
+            <ColorWidget initialColor="#e5e7eb"/>
+            <div className="example-number">⚡⌁ Example 5 ⌁⚡</div>
+            <UseFetch/>
+            <div className="example-number">⚡⌁ Example 6 ⌁⚡</div>
+            <ConditionalEffect/>
+
+
+        </div>
+
+
+    </div>
 
 </div>
 
