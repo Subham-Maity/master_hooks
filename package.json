@@ -31,6 +31,7 @@
     "react-dom": "18.2.0",
     "rehype-slug": "^5.1.0",
     "shiki": "^0.14.2",
+    "styled-components": "^6.0.5",
     "tailwindcss": "^3.3.2",
     "typescript": "5.0.4",
     "vercel": "^29.0.1",
