@@ -244,7 +244,7 @@ export default function ShadowInputs() {
     )
 }
 ```
-
+- Example 5
 > Only display a text
 ```js
 import React, {useState} from "react";
@@ -294,6 +294,7 @@ const BasicForm = () => {
 
 export default BasicForm;
 ```
+- Example 6
 > Add an item (Todo List)
 ```js
 import React, { useState } from "react";
@@ -368,6 +369,7 @@ function TodoList(props: TodoListProps) {
 export default TodoList;
 
 ```
+- Example 7
 > Toggles
 ```js
 import React, { useState } from "react";
@@ -438,4 +440,35 @@ export function UpdateTitle() {
     </div>
   );
 }
+```
+- Example 2
+> If you change the screen size, the screen size will be displayed
+```js
+import React, {useState, useEffect} from "react";
+
+const ClearUp = () => {
+    const [widthCount, setWidthCount] = useState(window.screen.height);
+    const [heightCount, setHeightCount] = useState(window.screen.width);
+
+    const currentScreenWidth = () => {
+        setWidthCount(() => window.innerWidth);
+    }
+    const currentScreenHeight = () => {
+        setHeightCount(() => window.innerHeight)
+    }
+    useEffect(() => {
+        window.addEventListener('resize', currentScreenWidth),
+            window.addEventListener("resize", currentScreenHeight)
+    })
+
+    return (
+        <div>
+            <h2 className="font-bold text-stone-200 text-2xl mb-2">The size of the window is <span
+                className="font-bold text-[#3581a0]"> {widthCount} </span></h2>
+            <h2 className="font-bold text-stone-200 text-2xl">The size of the window is <span
+                className="font-bold text-[#3581a0]"> {heightCount} </span></h2>
+        </div>
+    );
+};
+export default ClearUp;
 ```
