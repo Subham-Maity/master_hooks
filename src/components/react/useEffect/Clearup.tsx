@@ -14,7 +14,11 @@
 //     }
 //     useEffect(() => {
 //         window.addEventListener('resize', currentScreenWidth),
-//             window.addEventListener("resize", currentScreenHeight)
+//             window.addEventListener("resize", currentScreenHeight);
+//         return () => {
+//             window.removeEventListener('resize', currentScreenWidth);
+//             window.removeEventListener("resize", currentScreenHeight);
+//         }
 //     })
 //
 //     return (
