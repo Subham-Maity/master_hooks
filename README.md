@@ -401,3 +401,41 @@ function Toggles() {
 export default Toggles;
 
 ```
+
+## UseEffect
+
+- Syntax
+```js
+useEffect(() => {
+    // code to run on component mount
+}, [dependencies])
+```
+> -  `code to run on component mount` is the code that will run when the component mounts
+> -  `dependencies` is an array of dependencies. If one of the dependencies changes, the effect will run again (optional)
+> -  `return` is a function that will run when the component unmounts (optional)
+
+- Example 1
+> If you click the button, the count will increase by 1
+```js
+import React, { useEffect, useState } from "react";
+
+export function UpdateTitle() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+      document.title = `You clicked ${count} times`;
+  }, [count]);
+
+  return (
+    <div>
+      <p className="update-title-text">You clicked {count} times</p>
+      <button
+        className="update-title-button"
+        onClick={() => setCount(count + 1)}
+      >
+        Click me
+      </button>
+    </div>
+  );
+}
+```
